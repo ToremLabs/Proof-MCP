@@ -1,0 +1,57 @@
+{
+  "name": "@toremlabs/proof-mcp",
+  "version": "1.0.0-rc.24",
+  "mcpName": "io.github.ToremLabs/proof",
+  "description": "Cloud-authenticated Model Context Protocol server for a Proof workspace. Logs into the user's Proof account and lets any MCP client (Claude Desktop, Claude Code, Cursor, custom agents) read and write the same workspace the webapp uses. Ideation, Agent, and Review are all reachable from the agent: explore and prove concepts, update the agent run, and read the decision record, with live Realtime change subscriptions.",
+  "type": "module",
+  "bin": {
+    "proof-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://proof.toremlabs.com/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToremLabs/proof-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "proof",
+    "agentic-engineering",
+    "knowledge-graph",
+    "claude-code",
+    "claude-desktop",
+    "cursor"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "@google/generative-ai": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "openai": "^4.71.0",
+    "undici": "^6.25.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "AGPL-3.0-or-later"
+}

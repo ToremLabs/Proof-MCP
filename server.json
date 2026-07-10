@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ToremLabs/proof",
+  "description": "Direct, Verify, and pull the decision record from your Proof workspace, right inside your AI assistant.",
+  "repository": {
+    "url": "https://github.com/ToremLabs/proof-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0-rc.22",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@toremlabs/proof-mcp",
+      "version": "1.0.0-rc.22",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
