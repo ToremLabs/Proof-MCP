@@ -2,7 +2,7 @@
   "name": "@toremlabs/proof-mcp",
   "version": "1.2.0",
   "mcpName": "io.github.ToremLabs/proof",
-  "description": "Cloud-authenticated Model Context Protocol server for a Proof workspace. Logs into the user's Proof account and lets any MCP client (Claude Desktop, Claude Code, Cursor, custom agents) read and write the same workspace the webapp uses. Ideation, Agent, and Review are all reachable from the agent: explore and prove concepts, update the agent run, and read the decision record, with live Realtime change subscriptions.",
+  "description": "Proof is an audit trail for AI-written code: it records what the agent changed, what a person actually reviewed, and who signed off. This MCP server logs into the user's Proof account and lets any MCP client (Claude Desktop, Claude Code, Cursor, custom agents) read and write the same workspace the webapp uses: frame the work, review the agent's changes, and read the signed decision record.",
   "type": "module",
   "bin": {
     "proof-mcp": "dist/index.js"
@@ -33,7 +33,12 @@
     "knowledge-graph",
     "claude-code",
     "claude-desktop",
-    "cursor"
+    "cursor",
+    "ai-code-review",
+    "audit-trail",
+    "code-review",
+    "ai-agents",
+    "human-in-the-loop"
   ],
   "dependencies": {
     "@anthropic-ai/sdk": "^0.40.0",

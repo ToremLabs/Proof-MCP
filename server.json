@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.ToremLabs/proof",
-  "description": "Govern your AI coding agent: frame the work, review the changes, keep a signed decision record.",
+  "description": "An audit trail for AI-written code. Records what the agent changed, what a person actually reviewed, and who signed off, from inside Claude Code, Claude Desktop and Cursor.",
   "repository": {
     "url": "https://github.com/ToremLabs/proof-mcp",
     "source": "github"
