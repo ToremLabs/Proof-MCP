@@ -1,6 +1,10 @@
 # @toremlabs/proof-mcp
 
-A Model Context Protocol (MCP) server that exposes a [Proof](https://proof.toremlabs.com)
+[Proof](https://proof.toremlabs.com) is an audit trail for AI-written code: it
+records what the agent changed, what a person actually reviewed, and who signed
+off. This package is its MCP server.
+
+A Model Context Protocol (MCP) server that exposes a Proof
 workspace to any MCP-capable client (Claude Desktop, Claude Code, Cursor,
 Windsurf, custom agents). The server logs into the user's Proof account,
 talks to the same Supabase project the webapp talks to, and respects the

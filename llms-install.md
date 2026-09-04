@@ -9,6 +9,8 @@ starting the server before the account is linked just produces auth errors.
 
 ## What this server is
 
+Proof is an audit trail for AI-written code: it records what the agent changed, what a person actually reviewed, and who signed off.
+
 `@toremlabs/proof-mcp` connects an MCP client to a
 [Proof](https://proof.toremlabs.com) workspace: the concept canvas, the agent
 hand-off, and the signed decision record. It authenticates as the user's own
